@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 40px 20px 0 20px;
+}
+.heading {
+  width: 50%;
+  padding-bottom: 50px;
+}
+.heading h3 {
+  font-size: 3em;
+  font-weight: bolder;
+  padding-bottom: 10px;
+  border-bottom: 3px solid black;
+}
+.heading h3 span {
+  font-weight: 100;
+}
+.box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.dream {
+  display: flex;
+  flex-direction: column;
+  width: 32.5%;
+}
+.dream img {
+  width: 100%;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+.btn {
+  margin: 40px 0 70px 0;
+  background: #222;
+  padding: 15px 40px;
+  border-radius: 5px;
+}
+.btn a {
+  color: #fff;
+  font-size: 1.2em;
+  text-decoration: none;
+  font-weight: bolder;
+  letter-spacing: 3px;
+}
+.btn a:hover {
+  color: #ff8484;
+}
+
+/* mouse stalker */
+
+#mouse-stalker {
+  pointer-events: none;
+  position: fixed;
+  top: -8px;
+  left: -8px;
+  width: 30px;
+  height: 30px;
+  background: rgba(126, 190, 171, 0.8);
+  border-radius: 50%;
+  transform: translate(0, 0);
+  transition: transform 0.2s;
+  transition-timing-function: ease-out;
+  z-index: 999;
+}
+
+/* brighten */
+
+.brighten img {
+  filter: brightness(50%);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.brighten img:hover {
+  filter: brightness(100%);
+}
+
+
+
+
+/* ------------------------------
+  media setting
+------------------------------ */
+
+/* tablet */
+@media only screen and (max-width: 769px) {
+  .box {
+    flex-direction: column;
+  }
+  .dream {
+    width: 100%;
+  }
+}
+
+/* cellphone */
+@media only screen and (max-width: 643px) {
+  .heading {
+    width: 100%;
+  }
+  .heading h3 {
+    font-size: 1em;
+  }
+}
