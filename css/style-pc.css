@@ -72,7 +72,7 @@ h1 a:hover {
   width: 20px;
   position: absolute;
   left: 50%;
-  bottom: 50%;
+/*   bottom: 50%; */
   border-radius: 50%;
   transform: translate(-50%, -50%);
 }
